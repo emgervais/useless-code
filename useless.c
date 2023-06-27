@@ -104,7 +104,7 @@ int main(int ac, char **av, char **envp)
     if(ac != 2 || valid(av[1]))
         return(1);
     long nbr = atoi(av[1]);
-    if(nbr > 1000000 || nbr < 0)
+    if(nbr > 10000 || nbr < 0)
         return (1);
     write_program(av[1]);
     char *args[] = {"gcc", "pair.c", "-o", "exec", NULL};
