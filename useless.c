@@ -105,7 +105,7 @@ int main(int ac, char **av, char **envp)
         return(1);
     long nbr = atoi(av[1]);
     if(nbr > 10000 || nbr < 0)
-        return (printf("number needs to be between 0 and 10000\n", 0);
+        return (printf("number needs to be between 0 and 10000\n"), 0);
     write_program(av[1]);
     char *args[] = {"gcc", "pair.c", "-o", "exec", NULL};
     char *args2[] = {"./exec", NULL};
